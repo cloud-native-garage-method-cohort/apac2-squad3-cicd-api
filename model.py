@@ -5,7 +5,7 @@ class Model(object):
         pass
 
     def _exec(self, sql):
-        conn=psycopg2.connect(database="testdb",user="postgres",password="postgres",host="localhost",port="5432")
+        conn=psycopg2.connect(database="testdb",user="postgres",password="postgres",host="172.21.106.94",port="5432")
         cur=conn.cursor()
 
         cur.execute(sql)
